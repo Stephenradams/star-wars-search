@@ -8,7 +8,7 @@ export default async function Page() {
 
     return (
         <>
-            <h1 className="font-bold text-2xl">Planets</h1>
+            <h1 className="font-bold text-6xl">Planets</h1>
             <ul className="pt-4">
                 {planets.map((planet: Planet) => (
                     <li key={planet.name}>

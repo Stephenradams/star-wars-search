@@ -7,7 +7,7 @@ export default async function Page() {
     const species = await getSpecies();
     return (
         <>
-            <h1 className="font-bold text-2xl">Species</h1>
+            <h1 className="font-bold text-6xl">Species</h1>
             <ul className="pt-4">
                 {species.map((specie: Species) => (
                     <li key={specie.name}>

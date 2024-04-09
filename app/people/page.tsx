@@ -7,7 +7,7 @@ export default async function Page() {
     const people = await getPeople();
     return (
         <>
-            <h1 className="font-bold text-2xl">People</h1>
+            <h1 className="font-bold text-6xl">People</h1>
             <ul className="pt-4">
                 {people.map((person: Character) => (
                     <li key={person.name}>

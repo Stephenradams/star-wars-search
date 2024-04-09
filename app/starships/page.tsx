@@ -6,8 +6,8 @@ import { getIndexFromUrl } from "../lib/utils";
 export default async function Page() {
     const starships = await getStarships();
     return (
-        <>
-            <h1 className="font-bold text-2xl">Starships</h1>
+        <div>
+            <h1 className="font-bold text-6xl">Starships</h1>
             <ul className="pt-4">
                 {starships.map((starship: Starship) => (
                     <li key={starship.name}>
@@ -15,6 +15,6 @@ export default async function Page() {
                     </li>
                 ))}
             </ul>
-        </>
+        </div>
     );
 }

@@ -6,13 +6,17 @@ export default async function Page({ params }: { params: { id: string } }) {
     const filmDetails: FilmDetails = await getFilm(params.id);
 
     return (
-        <div className="pt-12">
-            <h1>
-                <Link href="/films" className="text-blue-500 hover:underline">Films</Link>
+        <div>
+            <h1 className="font-bold text-6xl pb-10">
+                {filmDetails.title}
             </h1>
-            <h2>{filmDetails.title}</h2>
-            <blockquote>{filmDetails.opening_crawl}</blockquote>
+            <pre>{filmDetails.opening_crawl}</pre>
             <p>Director: {filmDetails.director}</p>
+            <p>Producer: {filmDetails.producer}</p>
+
+            <p>
+                <Link href="/films" className="text-blue-500 hover:underline text-1xl">Back to Films</Link>
+            </p>
         </div>
     )
 }
