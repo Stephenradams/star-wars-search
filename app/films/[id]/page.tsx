@@ -3,9 +3,7 @@ import { FilmDetails } from "@/app/lib/definitions";
 import Link from "next/link";
 
 export default async function Page({ params }: { params: { id: string } }) {
-    const filmId = params.id;
     const filmDetails: FilmDetails = await getFilm(params.id);
-    console.log(filmDetails.title);
 
     return (
         <div className="pt-12">
