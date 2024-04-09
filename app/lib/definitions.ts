@@ -26,6 +26,14 @@ export type Starship = {
     url: string;
 };
 
+export type Vehicle = {
+    name: string;
+    model: string;
+    manufacturer: string;
+    cost_in_credits: string;
+    url: string;
+};
+
 export type Planet = {
     name: string;
     rotation_period: string;

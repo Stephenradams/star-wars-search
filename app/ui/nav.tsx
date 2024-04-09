@@ -9,6 +9,7 @@ export default function Nav() {
             <Link href="/species">Species</Link>
             <Link href="/planets">Planets</Link>
             <Link href="/starships">Starships</Link>
+            <Link href="/vehicles">Vehicles</Link>
         </nav>
     )
 }
