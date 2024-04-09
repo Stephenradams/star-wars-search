@@ -1,3 +1,4 @@
+import { Film } from './definitions';
 export type Film = {
     title: string;
     episode_id: number;
@@ -26,4 +27,16 @@ export type Planet = {
     rotation_period: string;
     orbital_period: string;
     diameter: string;
+};
+
+export type FilmDetails = {
+    title: string;
+    episode_id: number;
+    opening_crawl: string;
+    director: string;
+    producer: string;
+    release_date: string;
+    characters: Character[];
+    starships: Starship[];
+    planets: Planet[];
 };

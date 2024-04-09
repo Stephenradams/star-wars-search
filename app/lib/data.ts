@@ -28,3 +28,9 @@ export async function getFilms() {
     const data = await response.json();
   return data.results;
 }
+
+export async function getFilm(id: string) {
+  const response = await fetch(`https://swapi.dev/api/films/${id}/`);
+  const data = await response.json();
+  return data;
+}

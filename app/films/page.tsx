@@ -1,3 +1,4 @@
+import Link from "next/link";
 import { getFilms } from "../lib/data";
 import { Film } from "../lib/definitions";
 
@@ -9,7 +10,9 @@ export default async function Page() {
             <ul className="pt-4">
                 {films.map((film: Film) => (
                     <li key={film.episode_id}>
-                        {film.title}
+                        <Link href={`/films/${film.episode_id}`} className="text-blue-500 hover:underline">
+                            {film.title}
+                        </Link>
                     </li>
                 ))}
             </ul>

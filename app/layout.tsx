@@ -17,19 +17,13 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
 
-  const handleSearch = (query: string) => {
-    console.log(query);
-  }
 
   return (
     <html lang="en">
-      <body className="flex flex-col bg-slate-500 max-h-fit text-gray-900">
+      <body className="flex flex-col bg-slate-100 max-h-fit text-gray-900">
         <main className="w-full">
           <Nav />
           <section className="p-10">
-            <section className="pt-2 pb-2">
-              <Search placeholder="Search" />
-            </section>
             {children}
           </section>
         </main>
